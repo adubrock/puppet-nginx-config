@@ -2,9 +2,9 @@
 
 # install and bootstrap an nginx instance
 
-class { 'nginx':
+class {'nginx':
   manage_repo => true,
-  package_source => 'nginx-mainline'
+  package_source => 'nginx-stable'
   }
 
 #download the file from github (https://github.com/puppetlabs/exercise-webpage)
